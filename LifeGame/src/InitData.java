@@ -294,6 +294,18 @@ public class InitData {
         }
     }
 
+    public void InitSix() {
+        for (int i = 1; i < state.length; i++) {
+            for (int j = 1; j < state[i].length - 1; j++) {
+                state[i][j] = false;
+                stateNext[i][j] = false;
+            }
+        }
+        state[5][5] = true;
+        state[6][6] = true;
+        state[7][7] = true;
+        state[8][8] = true;
+    }
 
 
     // 清除屏幕
